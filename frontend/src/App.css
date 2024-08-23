@@ -1,0 +1,296 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+
+.body {
+  background-image: url(src/images/ss5.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Optional: Keeps the background fixed while scrolling */
+  min-height: 100vh; /* Ensures the body takes up at least the height of the viewport */
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  margin: 0;
+}
+
+
+
+
+/* Footer styles */
+.footer {
+  width: 100%;
+  background-color: rgba(100, 100, 100, 0.8); /* Semi-transparent grey background */
+  backdrop-filter: blur(10px); /* Apply backdrop blur effect */
+  color: #fff; /* White text color */
+  padding: 30px 0; /* 30px padding on top and bottom, 0 padding on left and right */
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+
+
+/* footer end */
+
+
+/* Content container styles */
+.content-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures the content container takes at least the full height of the viewport */
+}
+
+/* Main content styles */
+.main-content {
+  flex: 1; /* Allows the main content to expand to fill remaining space */
+}
+
+
+/* css for nav */
+/* CSS for HeaderComponent */
+
+/* Navbar */
+.navbar {
+  background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent white background color */
+  backdrop-filter: blur(10px); /* Apply backdrop blur effect */
+  padding: 15px 0; /* Increase top and bottom padding */
+}
+
+/* Navbar Brand */
+.navbar-brand {
+  color: #fff; /* Change brand text color to white */
+  font-size: 1.8rem; /* Increase brand font size */
+  font-weight: bold; /* Make brand text bold */
+}
+
+/* Navbar Links */
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0; /* Add vertical margin between navbar components */
+  text-align: center; /* Center-align navbar links */
+}
+
+.navbar li {
+  display: inline-block;
+  margin-right: 10px; /* Add margin between navbar items */
+}
+
+.navbar a {
+  color: #fff; /* Change link text color to white */
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease; /* Add transition effect */
+  position: relative; /* Make the link container for pseudo-element */
+}
+
+/* Grey line between navbar items */
+.navbar a::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -5px; /* Adjust the distance of the line from the link */
+  transform: translateY(-50%);
+  height: 70%; /* Adjust the height of the line */
+  width: 1px;
+  background-color: #ccc; /* Grey line color */
+}
+
+/* Hover effect for menu items */
+.navbar a:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background color on hover */
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* Box shadow for the glass effect on hover */
+}
+
+
+/* end of nav css */
+
+
+
+/* css for table */
+
+/* Custom styling for the table container */
+.table-container {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center items horizontally */
+  margin-top: 20px; /* Add margin on top */
+  backdrop-filter: blur(5px); /* apply blur effect */
+  margin-bottom: 20px; /* Add margin on bottom */
+}
+
+/* Custom styling for the box */
+.box {
+  background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Adjust padding as needed */
+  margin-bottom: 100px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Box shadow for the glass effect */
+  max-width: 80%; /* Maximum width of the box */
+}
+
+/* Custom styling for the table */
+.table-custom {
+  background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+  border-radius: 10px; /* Rounded corners */
+  overflow: hidden; /* Hide overflow content */
+  max-width: 100%; /* Maximum width of the table */
+}
+
+/* Custom styling for the table header */
+.table-custom thead th {
+  background-color: rgba(255, 255, 255, 0.3) !important; /* Semi-transparent background */
+  border-top: none; /* Remove top border */
+  border-bottom: 1px solid #ccc; /* Grey bottom border */
+}
+
+/* Custom styling for the table body */
+.table-custom tbody td {
+  background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+  border-top: 1px solid #ccc; /* Grey top border */
+  border-bottom: 1px solid #ccc; /* Grey bottom border */
+}
+
+/* Custom styling for the table rows */
+.table-custom tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.4); /* Semi-transparent background on hover */
+}
+
+/* Custom styling for the buttons */
+
+.btn {
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  background-color: transparent;
+  position: relative;
+  overflow: hidden;
+  color: inherit;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  width: 120px; /* Set a fixed width for all buttons */
+}
+
+/* Custom styling for the buttons on hover */
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.4); /* Slightly brighter background on hover */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4); /* Increase shadow on hover */
+}
+
+
+/* till here for table */
+
+/* form css */
+.container {
+  max-width: 400px; /* reduce the outer box width */
+  margin: 50px auto; /* center the container */
+  padding: 20px;
+  padding-bottom: 40px; /* add padding at the bottom */
+  background: rgba(255, 255, 255, 0.8); /* semi-transparent white background */
+  backdrop-filter: blur(10px); /* apply blur effect */
+  border-radius: 20px; /* rounded corners */
+}
+
+/* Glassmorphic card */
+.glassmorphic-card {
+  max-width: 500px; /* Adjust the card width */
+  margin: 50px auto; /* Center the card */
+  padding: 20px;
+  border-radius: 20px; /* Rounded corners */
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+  backdrop-filter: blur(10px); /* Apply blur effect */
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Border color */
+}
+
+/* Glassmorphic card body */
+.glassmorphic-card-body {
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+  border-radius: 20px; /* Rounded corners */
+  padding: 20px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); /* Shadow effect */
+}
+
+
+.card-title {
+  color: #000; /* Set card title color */
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  background-color: rgba(255, 255, 255, 0.1); /* semi-transparent white background */
+  border: none; /* remove border */
+  border-radius: 10px; /* rounded corners */
+  padding: 10px;
+}
+
+.invalid-feedback {
+  color: #dc3545; /* red color for error messages */
+}
+
+.btn-success {
+  background-color: #4caf50; /* green color for success button */
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+
+.btn-success:hover {
+  background-color: #45a049; /* darker green on hover */
+}
+
+
+/* end of form css */
+
+/* pagination css */
+
+/* Glassmorphic pagination */
+.glassmorphic-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+  border-radius: 20px; /* Rounded corners */
+  padding: 10px 20px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); /* Shadow effect */
+}
+
+.glassmorphic-pagination .page-item {
+  list-style: none; /* Remove bullet points */
+}
+
+.glassmorphic-pagination .page-item .page-link {
+  color: #000; /* Set text color */
+  border: none; /* Remove default border */
+}
+
+.glassmorphic-pagination .page-item .page-link:hover {
+  background-color: rgba(255, 255, 255, 0.5); /* Lighten background color on hover */
+}
+
+.glassmorphic-pagination .page-item.active .page-link {
+  background-color: #4caf50; /* Green background for active page */
+  border-color: #4caf50; /* Green border for active page */
+}
+
+.glassmorphic-pagination .page-item.disabled .page-link {
+  color: rgba(0, 0, 0, 0.5); /* Dim text color for disabled items */
+}
+
+/* end of pagination css */
+
+
+
+
